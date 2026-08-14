@@ -2,13 +2,13 @@ const ChampionCard = ({ champion }) => {
   return (
     <div className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
       
-      <div className="relative w-full aspect-[3/4] overflow-hidden bg-slate-950">
+      <div className="relative w-full aspect-3/4 overflow-hidden bg-slate-950">
         <img
           src={champion.image}
           alt={champion.name}
           className="w-full h-full object-cover object-top"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-transparent to-transparent" />
         <h3 className="absolute bottom-3 left-4 text-2xl font-bold text-white">
           {champion.name}
         </h3>
